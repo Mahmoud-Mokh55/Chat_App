@@ -1,4 +1,5 @@
 import 'package:chat_app/home_screen.dart';
+import 'package:chat_app/users_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'login.dart';
@@ -12,10 +13,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-     initialRoute: HomeScreen.routename ,
+     initialRoute: UsersScreen.routename ,
       routes: {
         HomeScreen.routename:(c)=>HomeScreen(),
         LoginScreen.routename:(c)=>LoginScreen(),
+        UsersScreen.routename:(c)=>UsersScreen(),
       },
 
     );
